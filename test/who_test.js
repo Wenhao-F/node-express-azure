@@ -12,7 +12,7 @@ describe('/GET', () => {
         chai.request(`http://localhost:${config.port}`)
             .get('/who')
             .end((err, res) => {
-                res.should.have.status(200);
+                res.should.have.status(500);
                 res.text.should.contain('Who We Are');
                 done();
             });
