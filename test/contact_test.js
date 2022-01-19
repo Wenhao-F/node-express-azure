@@ -7,6 +7,8 @@ const server = require('../app');
 
 chai.use(chaiHttp);
 
+//This is a test
+
 describe('/GET', () => {
     it('returns the contact page', (done) => {
         chai.request(`http://localhost:${config.port}`)
